@@ -1,8 +1,7 @@
-package com.proyecto.tareas.dominio.puertos.in;
+package com.proyecto.tareas.dominio.puertos.out;
 
 import com.proyecto.tareas.dominio.modelo.AdditionalTaskInfo;
 
-public interface getAdditionalTaskInfoUseCase {
-
+public interface ExternalServicePort {
     AdditionalTaskInfo getAdditionalTaskInfo(Long id);
 }
