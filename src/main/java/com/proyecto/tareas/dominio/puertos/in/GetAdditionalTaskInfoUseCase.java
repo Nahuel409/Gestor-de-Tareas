@@ -4,5 +4,5 @@ import com.proyecto.tareas.dominio.modelo.AdditionalTaskInfo;
 
 public interface GetAdditionalTaskInfoUseCase {
 
-    AdditionalTaskInfo getAdditionalTaskInfo(Long id);
+    AdditionalTaskInfo getAdditionalTaskInfo(Long taskId);
 }

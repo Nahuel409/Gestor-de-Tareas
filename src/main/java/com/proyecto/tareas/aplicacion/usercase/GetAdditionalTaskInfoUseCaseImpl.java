@@ -5,12 +5,12 @@ import com.proyecto.tareas.dominio.modelo.AdditionalTaskInfo;
 import com.proyecto.tareas.dominio.puertos.in.GetAdditionalTaskInfoUseCase;
 import com.proyecto.tareas.dominio.puertos.out.ExternalServicePort;
 
-public class getAdditionalTaskInfoUseCaseImpl implements GetAdditionalTaskInfoUseCase {
+public class GetAdditionalTaskInfoUseCaseImpl implements GetAdditionalTaskInfoUseCase {
 
     private final ExternalServicePort externalServicePort;
 
 
-    public getAdditionalTaskInfoUseCaseImpl(ExternalServicePort externalServicePort) {
+    public GetAdditionalTaskInfoUseCaseImpl(ExternalServicePort externalServicePort) {
         this.externalServicePort = externalServicePort;
     }
 

@@ -3,11 +3,13 @@ package com.proyecto.tareas.infraestructura.repositories;
 import com.proyecto.tareas.dominio.modelo.Task;
 import com.proyecto.tareas.dominio.puertos.out.TaskRepositoryPort;
 import com.proyecto.tareas.infraestructura.entities.TaskEntity;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Component
 public class JpaTaskRepositoryAdapter implements TaskRepositoryPort {
 
     private final JpaTaskRepository jpaTaskRepository;
@@ -24,7 +26,7 @@ public class JpaTaskRepositoryAdapter implements TaskRepositoryPort {
     }
 
     @Override
-    public Optional<Task> findkById(Long id) {
+    public Optional<Task> findById(Long id) {
         return jpaTaskRepository.findById(id).map(TaskEntity::toDomainModel);
     }
 
