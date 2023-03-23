@@ -10,7 +10,7 @@
 		<li><strong>Capa de Infraestructura:</strong> Esta capa contiene la implementación concreta de los puertos, como por ejemplo el código para conectarse a una base de datos o para consumir una API externa.</li>
 </ul>
 	<h2>¿Qué hace este proyecto?</h2>
-	<p>Este proyecto implementa la arquitectura hexagonal para la creación de una API de tareas, donde se pueden crear, leer, actualizar y eliminar tareas. Además, se utiliza una API externa en línea para obtener información sobre el clima en la ubicación donde se deben realizar las tareas.</p>
+	<p>Este proyecto implementa la arquitectura hexagonal para la creación de una API de tareas, donde se pueden crear, leer, actualizar y eliminar tareas. Además, se utiliza una API externa en línea para obtener información sobre usuarios.</p>
 	<p>La API de tareas consta de los siguientes endpoints:</p>
 	<ul>
 		<li><code>GET http://localhost:8080/task</code>: Obtiene todas las tareas.</li>
